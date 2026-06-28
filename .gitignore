@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Build / pack artifacts
+*.door
+*.door.sha256
+*.tgz
+
+# Logs & OS cruft
+*.log
+npm-debug.log*
+.DS_Store

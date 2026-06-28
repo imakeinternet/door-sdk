@@ -1,0 +1,46 @@
+{
+  "name": "@imakeinternet/door-sdk",
+  "version": "0.3.0",
+  "description": "SDK + CLI for authoring BBS door games. Write a *.door.js against a typed Host API, run it locally with `bbs-door dev`, then pack and publish it to a board's door store.",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "bin": {
+    "bbs-door": "bin/bbs-door.mjs"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "door.schema.json",
+    "bin",
+    "src",
+    "templates",
+    "examples",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "keywords": ["bbs", "door", "ansi", "terminal", "game", "cp437"],
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "tar": "^7.4.3"
+  },
+  "author": "iMake Internet",
+  "license": "MIT",
+  "homepage": "https://github.com/imakeinternet/door-sdk#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imakeinternet/door-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imakeinternet/door-sdk/issues"
+  }
+}

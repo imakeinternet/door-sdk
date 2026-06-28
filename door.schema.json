@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://bbs.test/schemas/door.schema.json",
+  "title": "BBS door manifest (door.json)",
+  "description": "Metadata for a BBS door game. slug/name/entry identify and locate the door; version + apiVersion are required to publish to a store.",
+  "type": "object",
+  "required": ["slug", "name"],
+  "additionalProperties": false,
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "maxLength": 64,
+      "description": "URL-safe identity and folder/registry key."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "description": "Display name."
+    },
+    "entry": {
+      "type": "string",
+      "pattern": "\\.door\\.js$",
+      "description": "Entry file relative to the door folder. Defaults to <slug>.door.js."
+    },
+    "summary": {
+      "type": "string",
+      "maxLength": 120,
+      "description": "One-line description shown in listings."
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 4000,
+      "description": "Longer prose description for the store detail page."
+    },
+    "author": {
+      "type": "string",
+      "maxLength": 64,
+      "description": "Author credit."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+(?:-[0-9A-Za-z.-]+)?(?:\\+[0-9A-Za-z.-]+)?$",
+      "description": "Semantic version, e.g. 1.0.0. Required to publish."
+    },
+    "apiVersion": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Host API major version this door targets. Required to publish."
+    },
+    "category": {
+      "type": "string",
+      "maxLength": 32,
+      "description": "Coarse store grouping, e.g. casino, rpg, utility."
+    },
+    "tags": {
+      "type": "array",
+      "maxItems": 12,
+      "items": { "type": "string", "maxLength": 24 },
+      "description": "Free-form search tags."
+    },
+    "license": {
+      "type": "string",
+      "maxLength": 40,
+      "description": "SPDX license id, e.g. MIT."
+    },
+    "homepage": {
+      "type": "string",
+      "maxLength": 200,
+      "description": "Project or source URL."
+    }
+  }
+}
