@@ -6,7 +6,7 @@ import { door } from '@imakeinternet/door-sdk';
 export default door({
   name: 'Hello Door',
   summary: 'The smallest possible door — say hi and remember a name.',
-  author: 'the BBS authors',
+  author: 'iMakeInternet',
 
   play(ctx) {
     ctx.screen.clear();

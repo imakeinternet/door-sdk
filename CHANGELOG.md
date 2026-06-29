@@ -4,6 +4,17 @@ All notable changes to `@imakeinternet/door-sdk` are documented here. This proje
 to [Semantic Versioning](https://semver.org/). The package version is independent
 of `HOST_API_VERSION` (the Host API contract a door targets).
 
+## [0.3.1] — 2026-06-28
+
+Docs & metadata. No API or runtime changes.
+
+### Changed
+- Expanded the README: a Quick start, a fuller worked example (menu loop +
+  leaderboard + broadcast), a Types & editor support section, and a complete CLI
+  reference table.
+- Author credited as **Mike Wojcik** under the **iMakeInternet** brand
+  (`package.json`, `LICENSE`, and the bundled example doors).
+
 ## [0.3.0] — 2026-06-28
 
 Publishing to a catalog.

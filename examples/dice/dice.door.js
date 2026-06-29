@@ -9,7 +9,7 @@ const d6 = () => 1 + Math.floor(Math.random() * 6);
 export default door({
   name: 'High Roller',
   summary: 'Roll against the house — a tiny menu + leaderboard demo.',
-  author: 'the BBS authors',
+  author: 'iMakeInternet',
 
   play(ctx) {
     ctx.player.wins = ctx.player.wins || 0;

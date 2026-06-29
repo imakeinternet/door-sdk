@@ -4,7 +4,7 @@
   "entry": "dice.door.js",
   "summary": "Roll against the house — a tiny menu + leaderboard demo.",
   "description": "Roll two dice against the house. Demonstrates ctx.menu, a numeric save field (wins), ctx.world.leaderboard, and a board-wide broadcast on a big win.",
-  "author": "the BBS authors",
+  "author": "iMakeInternet",
   "version": "1.0.0",
   "apiVersion": 1,
   "category": "example",

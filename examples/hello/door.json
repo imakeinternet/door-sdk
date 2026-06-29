@@ -4,7 +4,7 @@
   "entry": "hello.door.js",
   "summary": "The smallest possible door — say hi and remember a name.",
   "description": "A minimal example: clear the screen, read a line of input, remember the player across visits with a save blob.",
-  "author": "the BBS authors",
+  "author": "iMakeInternet",
   "version": "1.0.0",
   "apiVersion": 1,
   "category": "example",
